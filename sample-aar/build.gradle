@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/muak04/SampleAAR'
     gitUrl = 'https://github.com/muak04/SampleAAR.git'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.3'
 
     developerId = 'usman-smartfile'
     developerName = 'Usman Pervez'
@@ -51,6 +51,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.pnikosis:materialish-progress:1.5'
     testCompile 'junit:junit:4.12'
 }
 
@@ -104,7 +105,7 @@ install {
 
 apply plugin: 'com.jfrog.bintray'
 
-version = '0.0.1'
+version = '0.0.3'
 //version = libraryVersion
 
 if (project.hasProperty("android")) { // Android libraries
